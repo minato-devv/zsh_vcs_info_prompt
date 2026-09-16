@@ -9,6 +9,10 @@ zstyle ':vcs_info:*' formats ' %m' # use the miscellaneous array to display cust
 zstyle ':vcs_info:*' actionformats ' %m (%a)' # appearance when actions are available	
 
 +vi-git-format-array() {
+	if ! [[ -d .git ]] && ! git rev-parse --git-dir &>/dev/null; then
+		return 0
+	fi
+
 	local -a git_items git_aheadbehind # declare an array to store all info (added to miscellaneous array in the end) and an array to store both ahead and behind commit status
 	git_items+=("${hook_com[branch]}") # include branch name
 	local ahead_count behind_count untracked_count staged_count unstaged_count # declare vars that will store integers
