@@ -8,6 +8,8 @@ While you can use the default arrays for staged/unstaged and committed/uncommitt
 
 All of the shell scripting is within a dummy [`.zshrc`](.zshrc), which is where you should put things for interactive shell environments.
 
+> Disclaimer: This custom hook is designed for demo purposes, it is very basic, so expect limitations
+
 ---
 
 ### Showcase:
