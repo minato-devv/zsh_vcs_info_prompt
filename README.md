@@ -1,3 +1,5 @@
+### zsh_vcs_info_prompt
+
 `zsh` includes a native function for extracting a repository's version control data, so there is no need to rely on external plugins, you simply need to register the function to lazy load with `autoload -Uz vcs_info`
 
 You use `zstyle` to customize how the `vcs_info` formats the data, which is ultimately substituted into your command prompt. `precmd` is responsible for running the function every time you enter a command (data is extracted and information is updated before your command executes).
@@ -6,7 +8,9 @@ While you can use the default arrays for staged/unstaged and committed/uncommitt
 
 All of the shell scripting is within a dummy [`.zshrc`](.zshrc), which is where you should put things for interactive shell environments.
 
-Showcase:
+---
+
+### Showcase:
 
 A clean repository:
 
