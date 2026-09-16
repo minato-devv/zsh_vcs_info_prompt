@@ -42,7 +42,7 @@ A clean repository:
     <img src ="assets/unstaged.png" alt="" width="80%">
 </div>
 
-Ahead the remote by 1 commit:
+Ahead of the remote by 1 commit:
 
 <div align="center">
     <img src ="assets/ahead.png" alt="" width="80%">
