@@ -6,4 +6,48 @@ While you can use the default arrays for staged/unstaged and committed/uncommitt
 
 All of the shell scripting is within a dummy [`.zshrc`](.zshrc), which is where you should put things for interactive shell environments.
 
+Showcase:
+
+A clean repository:
+
+<div align="center">
+    <img src ="assets/clean_repo.png" alt="" width="50%">
+</div>
+
+2 untracked files:
+
+<div align="center">
+    <img src ="assets/untracked_files.png" alt="" width="50%">
+</div>
+
+1 staged file and 1 untracked file:
+
+<div align="center">
+    <img src ="assets/staged_untracked.png" alt="" width="50%">
+</div>
+
+1 staged, 1 unstaged, and 1 untracked file:
+
+<div align="center">
+    <img src ="assets/staged_unstaged_untracked.png" alt="" width="50%">
+</div>
+
+1 unstaged file:
+
+<div align="center">
+    <img src ="assets/unstaged.png" alt="" width="50%">
+</div>
+
+Ahead of the remote by 1 commit:
+
+<div align="center">
+    <img src ="assets/ahead.png" alt="" width="50%">
+</div>
+
+Behind of the remote by 1 commit:
+
+<div align="center">
+    <img src ="assets/behind.png" alt="" width="50%">
+</div>
+
 You can read more about `vcs_info` in the [official documentation](https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information).
