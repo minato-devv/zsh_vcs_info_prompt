@@ -9,6 +9,7 @@ zstyle ':vcs_info:*' formats ' %m' # use the miscellaneous array to display cust
 zstyle ':vcs_info:*' actionformats ' %m (%a)' # appearance when actions are available	
 
 +vi-git-format-array() {
+	# vcs_info already checks the working directory if it is a git repo, this is to be sure
 	if ! [[ -d .git ]] && ! git rev-parse --git-dir &>/dev/null; then
 		return 0
 	fi
@@ -28,7 +29,7 @@ zstyle ':vcs_info:*' actionformats ' %m (%a)' # appearance when actions are avai
 	[[ "${staged_count}" -gt 0 ]] && git_items+=("+${staged_count}") # same pattern previous
 	[[ "${unstaged_count}" -gt 0 ]] && git_items+=("*${unstaged_count}") # same pattern as previous
 
-	untracked_count="$(git status --porcelain | /usr/bin/grep -c '??')"
+	untracked_count="$(git status --porcelain 2>/dev/null | /usr/bin/grep -c '??')"
 	[[ $untracked_count -gt 0 ]] && git_items+=("?${untracked_count}") # same pattern as previous
 
 	hook_com[misc]="⎇ ${(j: :)git_items}" # finally, define vcs_info misc array holding all contextual information
