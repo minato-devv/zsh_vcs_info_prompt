@@ -15,7 +15,7 @@ All of the shell scripting is within a dummy [`.zshrc`](.zshrc), which is where 
 
 ```sh
 git clone https://github.com/minato-devv/zsh_vcs_info_prompt.git && cd zsh_vcs_info_prompt
-cat .zshrc >> "${ZDOTDIR-:$HOME}/.zshrc"
+cat .zshrc >> "${ZDOTDIR:-$HOME}/.zshrc"
 ```
 
 You can read more about `vcs_info` in the [official documentation](https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information).
