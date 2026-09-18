@@ -18,4 +18,12 @@ git clone https://github.com/minato-devv/zsh_vcs_info_prompt.git && cd zsh_vcs_i
 cat .zshrc >> "${ZDOTDIR:-$HOME}/.zshrc"
 ```
 
+Alternatively:
+
+```sh
+git clone https://github.com/minato-devv/zsh_vcs_info_prompt.git && cd zsh_vcs_info_prompt
+cat .zshrc > "${ZDOTDIR:-$HOME}/.zsh_vcs_info_prompt"
+echo 'source "${ZDOTDIR:-$HOME}/.zsh_vcs_info_prompt"' >> "${ZDOTDIR:-$HOME}/.zshrc"
+```
+
 You can read more about `vcs_info` in the [official documentation](https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information).
