@@ -19,5 +19,3 @@ cat .zshrc >> "${ZDOTDIR:-$HOME}/.zshrc"
 ```
 
 You can read more about `vcs_info` in the [official documentation](https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information).
-
----
