@@ -11,6 +11,15 @@ All of the shell scripting is within a dummy [`.zshrc`](.zshrc), which is where 
 > [!IMPORTANT]
 > *This custom hook is designed for demo purposes. It is not optimized for speed, and expect some limitations.*
 
+#### Installation
+
+```sh
+git clone https://github.com/minato-devv/zsh_vcs_info_prompt.git && cd zsh_vcs_info_prompt
+cat .zshrc >> "${ZDOTDIR-:$HOME}/.zshrc"
+```
+
+You can read more about `vcs_info` in the [official documentation](https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information).
+
 ---
 
 ### Showcase:
@@ -56,5 +65,3 @@ Behind the remote by 1 commit:
 <div align="center">
     <img src ="assets/behind.png" alt="" width="80%">
 </div>
-
-You can read more about `vcs_info` in the [official documentation](https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#Version-Control-Information).
